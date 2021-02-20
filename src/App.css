@@ -8,21 +8,6 @@ html, body {
   -webkit-animation-iteration-count: 1;
   -webkit-animation-timing-function: linear;
 }
-@media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
-  div {
-    overflow: hidden;
-  }
-}
-@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (orientation:landscape) {
-  div {
-    overflow: hidden;
-  }
-}
-@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (orientation:portrait) {
-  div {
-    overflow: hidden;
-  }
-}
 nav {
   z-index: 999;
 }
@@ -53,6 +38,7 @@ nav.navbar:before {
   width: 100%;
   position: absolute;
   width: 1220px;
+  max-width: 100%;
   top: 111px;
   left: 0;
   right: 0;
