@@ -10,7 +10,7 @@ html, body {
 }
 div {
   box-sizing: border-box;
-  overflow:hidden;
+  overflow: hidden;
 }
 nav {
   z-index: 999;
