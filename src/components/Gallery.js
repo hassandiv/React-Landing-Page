@@ -1,14 +1,13 @@
-import React from 'react';
-import { Container, Row, Col } from 'react-bootstrap';
-import G1 from '../images/G1.png'
-import G2 from '../images/G2.png'
-import G3 from '../images/G3.png'
-import G4 from '../images/G4.png'
-import styled from 'styled-components';
+import React from "react";
+import { Container, Row, Col } from "react-bootstrap";
+import G1L from "../images/G1L.png";
+import G2L from "../images/G2L.png";
+import G3L from "../images/G3L.png";
+import G4L from "../images/G4L.png";
+import styled from "styled-components";
 
 const Gallery = () => {
-
-const StyledRoot = styled.div`
+    const StyledRoot = styled.div`
     width: 1300px;
     min-height: 600px;
     max-width: 100%;
@@ -17,15 +16,19 @@ const StyledRoot = styled.div`
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    //margin-bottom: 100px;
-    @media(max-width: 991px) {
-        margin: 35px 0px 50px 0px;
+    @media (max-width: 991px) {
+      width: 660px;
+      margin: 50px auto;
     }
-    @media(max-width: 1315px) and (min-width: 350px) {
-        padding: 0px 15px;
+    @media (max-width: 600px) {
+      width: 100%;
+      margin: 50px auto 60px auto;
     }
-`;
-const StyledH2 = styled.h2`
+    @media (max-width: 1315px) and (min-width: 350px) {
+      padding: 0px 20px;
+    }
+  `;
+    const StyledH2 = styled.h2`
     font-size: 32px;
     line-height: 42px;
     height: 32px;
@@ -34,14 +37,14 @@ const StyledH2 = styled.h2`
     text-align: center;
     opacity: 1;
     margin-bottom: 38px;
-    font-family: 'Raleway', sans-serif;
+    font-family: "Raleway", sans-serif;
     font-weight: 700;
-`;
-const StyledButton = styled.button`
+  `;
+    const StyledButton = styled.button`
     color: #fff;
     width: 184px;
     height: 60px;
-    background: #D4B254 0% 0% no-repeat padding-box;
+    background: #d4b254 0% 0% no-repeat padding-box;
     box-shadow: 0px 2px 10px #00000033;
     border-radius: 30px;
     opacity: 1;
@@ -51,29 +54,32 @@ const StyledButton = styled.button`
     justify-content: center;
     align-items: center;
     margin: 0 auto;
-    margin-top: 26px;
+    margin-top: 20px;
     font-size: 15px;
     letter-spacing: 3px;
     line-height: 20px;
-    font-family: 'Roboto', sans-serif;
-    @media(max-width: 550px) {
-        width: 169px;
-        height: 45px;
-        font-size: 12px;
+    font-family: "Roboto", sans-serif;
+    @media (max-width: 550px) {
+      width: 169px;
+      height: 45px;
+      font-size: 12px;
     }
-`;
-const StyledImg = styled.img`
-    width: 100%;
+  `;
+    const StyledFlex = styled.div`
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+  `;
+    const StyledImg = styled.img`
+    width: 310px;
+    height: auto;
+    max-width: 100%;
     display: block;
-    @media(max-width: 550px) {
-        width: 310px;
-        height: 310px;
-        marging: 0 auto;
-        margin-right: auto;
-        margin-left: auto;
-    }
-`;
-    
+    margin: 0 auto;
+  `;
+
     return (
         <StyledRoot>
             <Container fluid>
@@ -82,32 +88,22 @@ const StyledImg = styled.img`
                         <StyledH2>Customer Gallery</StyledH2>
                     </Col>
                 </Row>
-                <Row>
-                    <Col xs={12} sm={6} md={3} className="mb-3">
-                        <StyledImg
-                            src={G1}
-                            alt="Kitchen1"
-                        />
-                    </Col>
-                    <Col xs={12} sm={6} md={3} className="mb-3">
-                        <StyledImg
-                            src={G2}
-                            alt="Kitchen2"
-                        />
-                    </Col>
-                    <Col xs={12} sm={6} md={3} className="mb-3">
-                        <StyledImg
-                            src={G3}
-                            alt="Kitchen3"
-                        />
-                    </Col>
-                    <Col xs={12} sm={6} md={3} className="mb-3">
-                        <StyledImg
-                            src={G4}
-                            alt="Kitchen4"
-                        />
-                    </Col>
-                </Row>
+                <StyledFlex>
+                    <Row>
+                        <Col xs={12} sm={6} md={6} lg={3} className="IpadPdd">
+                            <StyledImg src={G1L} alt="Kitchen1" />
+                        </Col>
+                        <Col xs={12} sm={6} md={6} lg={3} className="IpadPdd">
+                            <StyledImg src={G2L} alt="Kitchen2" />
+                        </Col>
+                        <Col xs={12} sm={6} md={6} lg={3} className="IpadPdd">
+                            <StyledImg src={G3L} alt="Kitchen3" />
+                        </Col>
+                        <Col xs={12} sm={6} md={6} lg={3} className="IpadPdd">
+                            <StyledImg src={G4L} alt="Kitchen4" />
+                        </Col>
+                    </Row>
+                </StyledFlex>
                 <Row>
                     <Col>
                         <StyledButton>View More</StyledButton>
@@ -115,8 +111,7 @@ const StyledImg = styled.img`
                 </Row>
             </Container>
         </StyledRoot>
-        
     );
-}
- 
+};
+
 export default Gallery;

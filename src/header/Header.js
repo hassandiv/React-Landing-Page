@@ -7,6 +7,7 @@ import Logo from '../images/Logo.svg';
 import Fb from '../images/Fb.svg';
 import Tw from '../images/Tw.svg';
 import In from '../images/In.svg';
+import Cart from '../images/Cart.svg'
 
 const StyledHeader = styled.div`
     position: absolute;
@@ -47,9 +48,46 @@ const StyledImg = styled.img`
         height: 25px;
     }
 `;
+const StyledUl = styled.ul`
+    padding: 0px;
+    margin: 0px;
+`;
 const StyledLi = styled.li`
     list-style: none;
     padding: 5px 0px;
+    &:nth-child(1), 
+    &:nth-child(2),
+    &:nth-child(3),
+    &:nth-child(4) {
+        position: absolute;
+        top: 30px;
+    }
+    &:nth-child(1) {
+        left: 15%;
+    }
+    &:nth-child(2) {
+        left: 23%;
+    }
+    &:nth-child(3) {
+        right: 29%;
+    }
+    &:nth-child(4) {
+        right: 18%;
+    }
+    @media(max-width: 991px) {
+        &:nth-child(1), 
+        &:nth-child(2),
+        &:nth-child(3),
+        &:nth-child(4) {
+            position: relative;
+            top: auto;
+            left: auto;
+            right: auto;
+        }
+        &:nth-child(4) { 
+            padding-bottom: 50px;
+        }
+    }
     a {
         color: #FFFFFF;
         font-size: 13px;
@@ -82,6 +120,16 @@ const StyledButton = styled.button`
     flex-direction: row-reverse;
     font-size: 13px;
     font-family: 'Roboto', sans-serif;
+    &:before {
+        content: "";
+        background-image: url(${Cart});
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        width: 15px;
+        height: 15px;
+        margin-left: 10px;
+    }
     @media(max-width: 991px) {
         top: 0px;
         width: 150px;
@@ -91,6 +139,18 @@ const StyledButton = styled.button`
         width: 60px;
         height: 40px;
         border: 0px;
+        padding-right: 0px;
+        &:before {
+            width: 25px;
+            height: 25px;
+            margin-left: 28px;
+            margin-top: -10px;
+        }
+    }
+`;
+const StyledSpan = styled.span`
+    @media(max-width: 550px) {
+        display: none;
     }
 `;
 const StyledSoicalImg = styled.img`
@@ -125,7 +185,7 @@ const Header = () => {
     return (  
         <Router>
         <StyledHeader>
-            <Navbar expand="lg" className="">
+            <Navbar expand="lg">
                     <StyledFlex>
                         <Navbar.Brand href="#home">
                             <StyledImg className="d-block mx-auto" src={Logo} alt="logo" />
@@ -137,7 +197,7 @@ const Header = () => {
                                 <a href="#"><StyledSoicalImg src={Tw} alt="twitter" /></a>
                                 <a href="#"><StyledSoicalImg src={In} alt="instagrame" /></a>
                             </StyledSocialFlex>
-                        <ul>
+                        <StyledUl>
                             <Nav>
                                 <StyledLi>
                                     <Link to="#">Shop</Link>
@@ -152,9 +212,13 @@ const Header = () => {
                                     <Link to="#">Gallery</Link>
                                 </StyledLi>
                             </Nav>
-                        </ul>
+                        </StyledUl>
                         </Navbar.Collapse>
-                        <StyledButton className="cart"><span>My Order</span></StyledButton>
+                        <StyledButton>
+                            <StyledSpan>
+                                My Order
+                            </StyledSpan>
+                        </StyledButton>
                     </StyledFlex>
                 </Navbar>
             </StyledHeader>

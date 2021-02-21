@@ -6,7 +6,7 @@ import Logo from '../images/Logo.svg';
 import FaceBookCir from '../images/FaceBookCir.svg';
 import TwitterCir from '../images/TwitterCir.svg';
 import InstagramCir from '../images/InstagramCir.svg';
-import Fonts from '../components/Fonts'
+import Slider1 from '../images/Slider1.png'
  
 const StyledRoot = styled.div`
     position: relative;
@@ -26,6 +26,10 @@ const StyledRoot = styled.div`
 const StyledBg = styled.div`
     width: 100%;
     min-height: 495px;
+    background-image: url(${Slider1});
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 `;
 const StyledLogo = styled.div`
     position: relative;
@@ -76,6 +80,10 @@ const Title = styled.h6`
     @media(max-width: 550px) {
         margin-bottom: 20px;
     }
+`;
+const StyledUl = styled.ul`
+    padding: 0px;
+    margin: 0px;
 `;
 const StyledLi = styled.li`
     list-style: none;
@@ -156,7 +164,7 @@ const Footer = () => {
                 <Container>
                     <StyledWrapper>
                     <Row>
-                            <Col>
+                        <Col>
                             <StyledLogo>
                                 <img className="d-block mx-auto" src={Logo} alt="logo" />
                             </StyledLogo>
@@ -164,47 +172,47 @@ const Footer = () => {
                     </Row>
                     <Row>
                         <Router>
-                                <Col xs={6} sm="6" md={3} className="mb-4">
+                            <Col xs={6} sm="6" md={3} className="mb-4">
                                 <Title>
                                     About
                                 </Title>
-                                <ul>
+                                <StyledUl>
                                     <StyledLi><Link to="#">Shop</Link></StyledLi>
                                     <StyledLi><Link to="#">Plan My Kitchen</Link></StyledLi>
                                     <StyledLi><Link to="#">About us</Link></StyledLi>
                                     <StyledLi><Link to="#">Gallery</Link></StyledLi>
-                                </ul>
+                                </StyledUl>
                             </Col>
-                                <Col xs={6} sm="6" md={3} className="mb-4">
+                            <Col xs={6} sm="6" md={3} className="mb-4">
                                 <Title>
                                     Service
                                 </Title>
-                                <ul>
+                                <StyledUl>
                                     <StyledLi><Link to="#">FAQ</Link></StyledLi>
                                     <StyledLi><Link to="#">Contact</Link></StyledLi>
                                     <StyledLi><Link to="#">How to buy</Link></StyledLi>
                                     <StyledLi><Link to="#">Downloads</Link></StyledLi>
-                                </ul>
+                                </StyledUl>
                             </Col>
-                                <Col xs={6} sm="6" md={3}>
+                            <Col xs={6} sm="6" md={3}>
                                 <Title>
                                     Info
                                 </Title>
-                                <ul>
+                                <StyledUl>
                                     <StyledLi><Link to="#">Delivery</Link></StyledLi>
                                     <StyledLi><Link to="#">Terms</Link></StyledLi>
                                     <StyledLi><Link to="#">Privacy</Link></StyledLi>
-                                </ul>
+                                </StyledUl>
                             </Col>
-                                <Col xs={6} sm="6" md={3}>
+                            <Col xs={6} sm="6" md={3}>
                                 <Title>
                                         Follow
                                 </Title>
-                                    <StyledFlex>
-                                        <a href="#"><StyledImg src={FaceBookCir} alt="facebook" /></a>
-                                        <a href="#"><StyledImg src={TwitterCir} alt="twitter" /></a>
-                                        <a href="#"><StyledImg src={InstagramCir} alt="instagarm" /></a>
-                                    </StyledFlex>
+                                <StyledFlex>
+                                    <a href="#"><StyledImg src={FaceBookCir} alt="facebook" /></a>
+                                    <a href="#"><StyledImg src={TwitterCir} alt="twitter" /></a>
+                                    <a href="#"><StyledImg src={InstagramCir} alt="instagarm" /></a>
+                                </StyledFlex>
                             </Col>
                         </Router>
                     </Row>
@@ -215,7 +223,7 @@ const Footer = () => {
                                 Responsive website design, Development & Hosting by mtc.
                             </StyledParagraph>
                         </Col>
-                        </Row>
+                    </Row>
                     </StyledWrapper>
                 </Container>
             </StyledBg>

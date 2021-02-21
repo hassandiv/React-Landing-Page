@@ -7,11 +7,11 @@ import Home from './Home';
 const App = () => {
 
   return (
-    <div className="App">
+    <>
       <Header />
       <Home />
       <Footer />
-    </div>
+    </>
   );
 }
 
