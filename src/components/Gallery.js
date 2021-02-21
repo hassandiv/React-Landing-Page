@@ -19,6 +19,9 @@ const StyledRoot = styled.div`
       width: 660px;
       margin: 50px auto;
     }
+    @media(max-width: 768px) {
+      width: 100%;
+    }
     @media (max-width: 600px) {
       width: 100%;
       margin: 50px auto 60px auto;
@@ -76,6 +79,9 @@ const StyledImg = styled.img`
     max-width: 100%;
     display: block;
     margin: 0 auto;
+    @media(max-width: 768px) {
+        width: 100%;
+    }
 `;
 
 const Gallery = () => {
