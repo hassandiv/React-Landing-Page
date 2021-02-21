@@ -13,7 +13,7 @@ nav {
   z-index: 999;
 }
 .navbar-light .navbar-toggler-icon {
-  background-image: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pjxzdmcgdmlld0JveD0iMCAwIDMyIDMyIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxkZWZzPjxzdHlsZT4uY2xzLTF7ZmlsbDpub25lO3N0cm9rZTojMDAwO3N0cm9rZS1saW5lam9pbjpyb3VuZDtzdHJva2Utd2lkdGg6MnB4O308L3N0eWxlPjwvZGVmcz48dGl0bGUvPjxnIGRhdGEtbmFtZT0iNjMtTWVudSIgaWQ9Il82My1NZW51Ij48Y2lyY2xlIGNsYXNzPSJjbHMtMSIgY3g9IjE2IiBjeT0iMTYiIHI9IjMiLz48Y2lyY2xlIGNsYXNzPSJjbHMtMSIgY3g9IjI4IiBjeT0iMTYiIHI9IjMiLz48Y2lyY2xlIGNsYXNzPSJjbHMtMSIgY3g9IjQiIGN5PSIxNiIgcj0iMyIvPjwvZz48L3N2Zz4=") !important;
+  background-image: url("./images/ToggleIcon.svg")!important;
 }
 .navbar-toggler {
   background-color: transparent !important;
@@ -23,12 +23,9 @@ nav {
   margin: 0 auto;
 }
 .navbar-light .navbar-toggler {
-  color: rgb(255 255 255) !important;
-  border-color: rgb(255 255 255) !important;
   border: 0px !important;
 }
 .navbar-light .navbar-toggler-icon {
-  filter: invert(1);
   width: 1.8em !important;
   height: 1.8em !important;
 }
