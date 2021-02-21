@@ -3,11 +3,6 @@ body {
   width: auto;
   overflow-x: hidden;
   margin: 0 auto !important;
-  -webkit-animation-delay: 0.1s;
-  -webkit-animation-name: fontfix;
-  -webkit-animation-duration: 0.1s;
-  -webkit-animation-iteration-count: 1;
-  -webkit-animation-timing-function: linear;
 }
 nav {
   z-index: 999;
@@ -113,10 +108,10 @@ nav.navbar:before {
 }
 /* TESTIMONIAL */
 .carousel .carousel-control-prev-icon {
-  background-image: url("https://svgshare.com/getbyhash/sha1-07ptEonNZGiuVBBYorZ+4z8y0i0=") !important;
+  background-image: url("./images/left.svg") !important;
 }
 .carousel .carousel-control-next-icon {
-  background-image: url("https://svgshare.com/getbyhash/sha1-JL/Nwc6JNUGolomNa6RHuAeJQ54=") !important;
+  background-image: url("./images/right.svg") !important;
 }
 .carousel-control-next-icon,
 .carousel-control-prev-icon {
