@@ -7,7 +7,7 @@ import G4L from "../images/G4L.png";
 import styled from "styled-components";
 
 const StyledRoot = styled.div`
-    width: 1300px;
+    width: 1320px;
     min-height: 600px;
     max-width: 100%;
     margin: 0 auto;
@@ -23,7 +23,6 @@ const StyledRoot = styled.div`
       width: 100%;
     }
     @media (max-width: 600px) {
-      width: 100%;
       margin: 50px auto 60px auto;
     }
     @media (max-width: 1315px) and (min-width: 350px) {
@@ -95,7 +94,7 @@ const Gallery = () => {
                     </Col>
                 </Row>
                 <StyledFlex>
-                    <Row>
+                    <Row className="w-100">
                         <Col xs={12} sm={6} md={6} lg={3} className="IpadPdd">
                             <StyledImg src={G1L} alt="Kitchen1" />
                         </Col>
