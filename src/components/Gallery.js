@@ -69,7 +69,6 @@ const StyledFlex = styled.div`
     justify-content: center;
     align-items: center;
     flex-direction: row;
-    flex-wrap: wrap;
 `;
 const StyledImg = styled.img`
     width: 310px;

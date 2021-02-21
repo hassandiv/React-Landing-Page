@@ -12,7 +12,7 @@ const StyledRoot = styled.div`
     position: relative;
     max-width: 100%;
     min-height: 495px;
-    &:before {
+    &::before {
         content: '';
         display: block;
         position: absolute;
@@ -20,7 +20,7 @@ const StyledRoot = styled.div`
         bottom: 0;
         left: 0;
         right: 0;
-        background: rgb(0 0 0 / 85%);
+        background: rgba(0, 0, 0, 0.85);
     }
 `;
 const StyledBg = styled.div`
@@ -160,7 +160,7 @@ const Footer = () => {
 
     return (
         <StyledRoot>
-            <StyledBg className="bgImage">
+            <StyledBg>
                 <Container>
                     <StyledWrapper>
                     <Row>
