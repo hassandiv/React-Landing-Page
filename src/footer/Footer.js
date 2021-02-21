@@ -1,7 +1,7 @@
 import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
+import { BrowserRouter as Route, Link } from 'react-router-dom';
 import styled from 'styled-components';
-import { BrowserRouter as Router, Link } from 'react-router-dom';
 import Logo from '../images/Logo.svg';
 import FaceBookCir from '../images/FaceBookCir.svg';
 import TwitterCir from '../images/TwitterCir.svg';
@@ -12,7 +12,7 @@ const StyledRoot = styled.div`
     position: relative;
     max-width: 100%;
     min-height: 495px;
-    &::before {
+    &:before {
         content: '';
         display: block;
         position: absolute;
@@ -159,28 +159,28 @@ const StyledImg = styled.img`
 const Footer = () => {
 
     return (
-        <StyledRoot>
-            <StyledBg>
-                <Container>
-                    <StyledWrapper>
-                    <Row>
-                        <Col>
-                            <StyledLogo>
-                                <img className="d-block mx-auto" src={Logo} alt="logo" />
-                            </StyledLogo>
-                        </Col>
-                    </Row>
-                    <Row>
-                        <Router>
+        <Route>
+            <StyledRoot>
+                <StyledBg>
+                    <Container>
+                        <StyledWrapper>
+                        <Row>
+                            <Col>
+                                <StyledLogo>
+                                    <img className="d-block mx-auto" src={Logo} alt="logo" />
+                                </StyledLogo>
+                            </Col>
+                        </Row>
+                        <Row>
                             <Col xs={6} sm="6" md={3} className="mb-4">
                                 <Title>
                                     About
                                 </Title>
                                 <StyledUl>
-                                    <StyledLi><Link to="#">Shop</Link></StyledLi>
-                                    <StyledLi><Link to="#">Plan My Kitchen</Link></StyledLi>
-                                    <StyledLi><Link to="#">About us</Link></StyledLi>
-                                    <StyledLi><Link to="#">Gallery</Link></StyledLi>
+                                    <StyledLi><Link to="/">Shop</Link></StyledLi>
+                                    <StyledLi><Link to="/">Plan My Kitchen</Link></StyledLi>
+                                    <StyledLi><Link to="/">About us</Link></StyledLi>
+                                    <StyledLi><Link to="/">Gallery</Link></StyledLi>
                                 </StyledUl>
                             </Col>
                             <Col xs={6} sm="6" md={3} className="mb-4">
@@ -188,10 +188,10 @@ const Footer = () => {
                                     Service
                                 </Title>
                                 <StyledUl>
-                                    <StyledLi><Link to="#">FAQ</Link></StyledLi>
-                                    <StyledLi><Link to="#">Contact</Link></StyledLi>
-                                    <StyledLi><Link to="#">How to buy</Link></StyledLi>
-                                    <StyledLi><Link to="#">Downloads</Link></StyledLi>
+                                    <StyledLi><Link to="/">FAQ</Link></StyledLi>
+                                    <StyledLi><Link to="/">Contact</Link></StyledLi>
+                                    <StyledLi><Link to="/">How to buy</Link></StyledLi>
+                                    <StyledLi><Link to="/">Downloads</Link></StyledLi>
                                 </StyledUl>
                             </Col>
                             <Col xs={6} sm="6" md={3}>
@@ -199,35 +199,35 @@ const Footer = () => {
                                     Info
                                 </Title>
                                 <StyledUl>
-                                    <StyledLi><Link to="#">Delivery</Link></StyledLi>
-                                    <StyledLi><Link to="#">Terms</Link></StyledLi>
-                                    <StyledLi><Link to="#">Privacy</Link></StyledLi>
+                                    <StyledLi><Link to="/">Delivery</Link></StyledLi>
+                                    <StyledLi><Link to="/">Terms</Link></StyledLi>
+                                    <StyledLi><Link to="/">Privacy</Link></StyledLi>
                                 </StyledUl>
                             </Col>
                             <Col xs={6} sm="6" md={3}>
                                 <Title>
-                                        Follow
+                                    Follow
                                 </Title>
                                 <StyledFlex>
-                                    <a href="#"><StyledImg src={FaceBookCir} alt="facebook" /></a>
-                                    <a href="#"><StyledImg src={TwitterCir} alt="twitter" /></a>
-                                    <a href="#"><StyledImg src={InstagramCir} alt="instagarm" /></a>
+                                    <Link to="/"><StyledImg src={FaceBookCir} alt="facebook" /></Link>
+                                    <Link to="/"><StyledImg src={TwitterCir} alt="twitter" /></Link>
+                                    <Link to="/"><StyledImg src={InstagramCir} alt="instagarm" /></Link>
                                 </StyledFlex>
                             </Col>
-                        </Router>
-                    </Row>
-                    <Row>
-                        <Col xs="12">
-                            <StyledParagraph>
-                                Copyright Online MTC Home Kitchens 2018 - All rights reserved.
-                                Responsive website design, Development & Hosting by mtc.
-                            </StyledParagraph>
-                        </Col>
-                    </Row>
-                    </StyledWrapper>
-                </Container>
-            </StyledBg>
-        </StyledRoot>
+                        </Row>
+                        <Row>
+                            <Col xs="12">
+                                <StyledParagraph>
+                                    Copyright Online MTC Home Kitchens 2018 - All rights reserved.
+                                    Responsive website design, Development & Hosting by mtc.
+                                </StyledParagraph>
+                            </Col>
+                        </Row>
+                        </StyledWrapper>
+                    </Container>
+                </StyledBg>
+            </StyledRoot>
+        </Route>
     );
 }
  

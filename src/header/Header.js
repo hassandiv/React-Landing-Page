@@ -1,6 +1,6 @@
 import React from "react";
 import { Navbar, Nav } from "react-bootstrap";
-import { BrowserRouter as Router, Link } from "react-router-dom";
+import { BrowserRouter as Route, Link } from 'react-router-dom';
 import "../App.css";
 import styled from "styled-components";
 import Logo from "../images/Logo.svg";
@@ -166,8 +166,6 @@ const StyledSocialFlex = styled.div`
   position: absolute;
   top: 40px;
   left: 0px;
-  // top: 35px;
-  // left: 30px;
   @media (max-width: 991px) {
     position: relative;
     top: 170px;
@@ -180,9 +178,9 @@ const StyledSocialFlex = styled.div`
 `;
 
 const Header = () => {
-    return (
-        <Router>
-            <StyledHeader>
+  return (
+      <Route>
+          <StyledHeader>
                 <Navbar expand="lg">
                     <StyledFlex>
                         <Navbar.Brand href="#home">
@@ -191,29 +189,29 @@ const Header = () => {
                         <Navbar.Toggle aria-controls="basic-navbar-nav" />
                         <Navbar.Collapse id="basic-navbar-nav">
                             <StyledSocialFlex>
-                                <a href="#">
+                                <Link to="/">
                                     <StyledSoicalImg src={Fb} alt="facebook" />
-                                </a>
-                                <a href="#">
+                                </Link>
+                                <Link to="/">
                                     <StyledSoicalImg src={Tw} alt="twitter" />
-                                </a>
-                                <a href="#">
+                                </Link>
+                                <Link to="/">
                                     <StyledSoicalImg src={In} alt="instagrame" />
-                                </a>
+                                </Link>
                             </StyledSocialFlex>
                             <StyledUl>
                                 <Nav>
                                     <StyledLi>
-                                        <Link to="#">Shop</Link>
+                                      <Link to="/">Shop</Link>
                                     </StyledLi>
                                     <StyledLi>
-                                        <Link to="#">Plan My Kitchen</Link>
+                                      <Link to="/">Plan My Kitchen</Link>
                                     </StyledLi>
                                     <StyledLi>
-                                        <Link to="#">About us</Link>
+                                      <Link to="/">About us</Link>
                                     </StyledLi>
                                     <StyledLi>
-                                        <Link to="#">Gallery</Link>
+                                      <Link to="/">Gallery</Link>
                                     </StyledLi>
                                 </Nav>
                             </StyledUl>
@@ -223,8 +221,8 @@ const Header = () => {
                         </StyledButton>
                     </StyledFlex>
                 </Navbar>
-            </StyledHeader>
-        </Router>
+          </StyledHeader>
+      </Route>
     );
 };
 

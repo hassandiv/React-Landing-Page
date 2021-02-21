@@ -8,9 +8,8 @@ import styled from "styled-components";
 
 const StyledRoot = styled.div`
     width: 1320px;
-    min-height: 600px;
     max-width: 100%;
-    margin: 0 auto;
+    margin: 5% auto;
     display: flex;
     justify-content: center;
     align-items: center;

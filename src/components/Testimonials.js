@@ -6,7 +6,6 @@ import "../App.css";
 const StyledRoot = styled.div`
   position: relative;
   width: 100%;
-  //min-height: 600px;
   min-height: 550px;
   background: #eeeeee 0% 0% no-repeat padding-box;
   opacity: 1;

@@ -77,7 +77,7 @@ const StyledImg = styled.img`
 const Slider = () => {
   return (
     <Carousel
-      //autoPlay={false}
+      // autoPlay={false}
       interval={5000}
       controls={false}
       indicators={true}

@@ -17,9 +17,6 @@ const StyledFlex = styled.div`
     text-align: center;
     padding: 0px 15px;
   }
-  // @media(max-width: 550px){
-  //   height: 600px;
-  // }
 `;
 const StyledParagraph = styled.p`
   line-height: 18px;
@@ -65,8 +62,6 @@ const StyledH2 = styled.h2`
 `;
 const StyledButton = styled.button`
   color: #fff;
-  // width: 211px;
-  // min-height: 60px;
   width: 184px;
   height: 60px;
   background: #D4B254 0% 0% no-repeat padding-box;
