@@ -86,8 +86,8 @@ const StyledImg = styled.img`
 const Gallery = () => {
 
     return (
-        <Container fluid>
-            <StyledRoot>
+        <StyledRoot>
+            <Container fluid>
                 <Row>
                     <Col>
                         <StyledH2>Customer Gallery</StyledH2>
@@ -114,8 +114,8 @@ const Gallery = () => {
                         <StyledButton>View More</StyledButton>
                     </Col>
                 </Row>
-            </StyledRoot>
-        </Container>
+            </Container>
+        </StyledRoot>
     );
 };
 
