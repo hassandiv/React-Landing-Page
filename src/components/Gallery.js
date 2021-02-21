@@ -6,8 +6,7 @@ import G3L from "../images/G3L.png";
 import G4L from "../images/G4L.png";
 import styled from "styled-components";
 
-const Gallery = () => {
-    const StyledRoot = styled.div`
+const StyledRoot = styled.div`
     width: 1300px;
     min-height: 600px;
     max-width: 100%;
@@ -27,8 +26,8 @@ const Gallery = () => {
     @media (max-width: 1315px) and (min-width: 350px) {
       padding: 0px 20px;
     }
-  `;
-    const StyledH2 = styled.h2`
+`;
+const StyledH2 = styled.h2`
     font-size: 32px;
     line-height: 42px;
     height: 32px;
@@ -39,8 +38,8 @@ const Gallery = () => {
     margin-bottom: 38px;
     font-family: "Raleway", sans-serif;
     font-weight: 700;
-  `;
-    const StyledButton = styled.button`
+`;
+const StyledButton = styled.button`
     color: #fff;
     width: 184px;
     height: 60px;
@@ -64,21 +63,23 @@ const Gallery = () => {
       height: 45px;
       font-size: 12px;
     }
-  `;
-    const StyledFlex = styled.div`
+`;
+const StyledFlex = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: row;
     flex-wrap: wrap;
-  `;
-    const StyledImg = styled.img`
+`;
+const StyledImg = styled.img`
     width: 310px;
     height: auto;
     max-width: 100%;
     display: block;
     margin: 0 auto;
-  `;
+`;
+
+const Gallery = () => {
 
     return (
         <StyledRoot>
