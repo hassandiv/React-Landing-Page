@@ -1,0 +1,37 @@
+{
+  "files": {
+    "main.css": "/mtc-test/static/css/main.f8314315.chunk.css",
+    "main.js": "/mtc-test/static/js/main.75770cd6.chunk.js",
+    "main.js.map": "/mtc-test/static/js/main.75770cd6.chunk.js.map",
+    "runtime-main.js": "/mtc-test/static/js/runtime-main.ab7cbc7d.js",
+    "runtime-main.js.map": "/mtc-test/static/js/runtime-main.ab7cbc7d.js.map",
+    "static/css/2.150d169a.chunk.css": "/mtc-test/static/css/2.150d169a.chunk.css",
+    "static/js/2.11e57e39.chunk.js": "/mtc-test/static/js/2.11e57e39.chunk.js",
+    "static/js/2.11e57e39.chunk.js.map": "/mtc-test/static/js/2.11e57e39.chunk.js.map",
+    "index.html": "/mtc-test/index.html",
+    "static/css/2.150d169a.chunk.css.map": "/mtc-test/static/css/2.150d169a.chunk.css.map",
+    "static/css/main.f8314315.chunk.css.map": "/mtc-test/static/css/main.f8314315.chunk.css.map",
+    "static/js/2.11e57e39.chunk.js.LICENSE.txt": "/mtc-test/static/js/2.11e57e39.chunk.js.LICENSE.txt",
+    "static/media/AboutImage.956ee7da.png": "/mtc-test/static/media/AboutImage.956ee7da.png",
+    "static/media/Cart.f925416c.svg": "/mtc-test/static/media/Cart.f925416c.svg",
+    "static/media/FaceBookCir.978b250b.svg": "/mtc-test/static/media/FaceBookCir.978b250b.svg",
+    "static/media/Fb.3c62360a.svg": "/mtc-test/static/media/Fb.3c62360a.svg",
+    "static/media/G1L.4885d254.png": "/mtc-test/static/media/G1L.4885d254.png",
+    "static/media/G2L.f9e9aeba.png": "/mtc-test/static/media/G2L.f9e9aeba.png",
+    "static/media/G3L.ad166d77.png": "/mtc-test/static/media/G3L.ad166d77.png",
+    "static/media/G4L.140cb545.png": "/mtc-test/static/media/G4L.140cb545.png",
+    "static/media/In.4688fef2.svg": "/mtc-test/static/media/In.4688fef2.svg",
+    "static/media/InstagramCir.e60bed97.svg": "/mtc-test/static/media/InstagramCir.e60bed97.svg",
+    "static/media/Logo.95ea3488.svg": "/mtc-test/static/media/Logo.95ea3488.svg",
+    "static/media/Slider1.3ed0ee8f.png": "/mtc-test/static/media/Slider1.3ed0ee8f.png",
+    "static/media/Tw.cb93954d.svg": "/mtc-test/static/media/Tw.cb93954d.svg",
+    "static/media/TwitterCir.5e3ace27.svg": "/mtc-test/static/media/TwitterCir.5e3ace27.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.ab7cbc7d.js",
+    "static/css/2.150d169a.chunk.css",
+    "static/js/2.11e57e39.chunk.js",
+    "static/css/main.f8314315.chunk.css",
+    "static/js/main.75770cd6.chunk.js"
+  ]
+}
