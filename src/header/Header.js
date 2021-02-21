@@ -200,7 +200,7 @@ const Header = () => {
                         <StyledUl>
                             <Nav>
                                 <StyledLi>
-                                    <Link to="#">Sho</Link>
+                                    <Link to="#">Shopp</Link>
                                 </StyledLi>
                                 <StyledLi>
                                     <Link to="#">Plan My Kitchen</Link>
