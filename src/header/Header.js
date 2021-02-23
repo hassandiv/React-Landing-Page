@@ -1,6 +1,6 @@
 import React from "react";
 import { Navbar, Nav } from "react-bootstrap";
-import { BrowserRouter as Route, Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import "../App.css";
 import styled from "styled-components";
 import Logo from "../images/Logo.svg";
@@ -179,7 +179,6 @@ const StyledSocialFlex = styled.div`
 
 const Header = () => {
   return (
-      <Route>
           <StyledHeader>
                 <Navbar expand="lg">
                     <StyledFlex>
@@ -222,7 +221,6 @@ const Header = () => {
                     </StyledFlex>
                 </Navbar>
           </StyledHeader>
-      </Route>
     );
 };
 

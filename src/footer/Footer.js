@@ -1,6 +1,6 @@
 import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
-import { BrowserRouter as Route, Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 import Logo from '../images/Logo.svg';
 import FaceBookCir from '../images/FaceBookCir.svg';
@@ -159,8 +159,7 @@ const StyledImg = styled.img`
 const Footer = () => {
 
     return (
-        <Route>
-            <StyledRoot>
+        <StyledRoot>
                 <StyledBg>
                     <Container>
                         <StyledWrapper>
@@ -172,7 +171,7 @@ const Footer = () => {
                             </Col>
                         </Row>
                         <Row>
-                            <Col xs={6} sm="6" md={3} className="mb-4">
+                            <Col xs={6} sm={6} md={3} className="mb-4">
                                 <Title>
                                     About
                                 </Title>
@@ -183,7 +182,7 @@ const Footer = () => {
                                     <StyledLi><Link to="/">Gallery</Link></StyledLi>
                                 </StyledUl>
                             </Col>
-                            <Col xs={6} sm="6" md={3} className="mb-4">
+                            <Col xs={6} sm={6} md={3} className="mb-4">
                                 <Title>
                                     Service
                                 </Title>
@@ -194,7 +193,7 @@ const Footer = () => {
                                     <StyledLi><Link to="/">Downloads</Link></StyledLi>
                                 </StyledUl>
                             </Col>
-                            <Col xs={6} sm="6" md={3}>
+                            <Col xs={6} sm={6} md={3}>
                                 <Title>
                                     Info
                                 </Title>
@@ -204,7 +203,7 @@ const Footer = () => {
                                     <StyledLi><Link to="/">Privacy</Link></StyledLi>
                                 </StyledUl>
                             </Col>
-                            <Col xs={6} sm="6" md={3}>
+                            <Col xs={6} sm={6} md={3}>
                                 <Title>
                                     Follow
                                 </Title>
@@ -226,8 +225,7 @@ const Footer = () => {
                         </StyledWrapper>
                     </Container>
                 </StyledBg>
-            </StyledRoot>
-        </Route>
+        </StyledRoot>
     );
 }
  

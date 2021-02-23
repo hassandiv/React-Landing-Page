@@ -7,7 +7,7 @@ import Gallery from './components/Gallery'
 const Home = () => {
 
     return (  
-        <>
+        <> 
             <Slider />
             <About />
             <Testimonials />

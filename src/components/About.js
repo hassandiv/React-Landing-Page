@@ -93,12 +93,12 @@ const About = () => {
                   align-items-start
                   flex-column
                 ">
-                  <StyledFlex>
-                    <StyledParagraph>Quality Craftmanship from build to delivery</StyledParagraph>
-                    <StyledH2>Discover the beauty of a handmade kitchen</StyledH2>
-                    <StyledParagraphText>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi eget est sit amet sapien venenatis maximus vel in urna. Nam mauris arcu, feugiat in finibus vitae, sollicitudin id purus. Ut imperdiet, magna eu pharetra tincidunt, mauris purus ultrices.</StyledParagraphText>
-                    <StyledButton>About us</StyledButton>
-                  </StyledFlex>
+                <StyledFlex>
+                  <StyledParagraph>Quality Craftmanship from build to delivery</StyledParagraph>
+                  <StyledH2>Discover the beauty of a handmade kitchen</StyledH2>
+                  <StyledParagraphText>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi eget est sit amet sapien venenatis maximus vel in urna. Nam mauris arcu, feugiat in finibus vitae, sollicitudin id purus. Ut imperdiet, magna eu pharetra tincidunt, mauris purus ultrices.</StyledParagraphText>
+                  <StyledButton>About us</StyledButton>
+                </StyledFlex>
               </Col>
               <Col md={{ span: 12, order: 2 }} lg={{ span: 6, order: 1 }} >
                 <img
